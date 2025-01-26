@@ -1,0 +1,97 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoContainer img {
+  height: 40px;
+}
+
+.text {
+  font-family: Gluten, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #514432;
+}
+
+.nav {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 30px;
+}
+
+.nav li a {
+  text-decoration: none;
+  color: #1c1812;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+}
+
+.nav li a:hover {
+  text-decoration: underline;
+}
+
+.menuIcon {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  .nav.active {
+    display: flex;
+  }
+
+  .menuIcon {
+    display: block;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav li {
+    margin: 5px 0;
+  }
+
+  .text {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .nav ul {
+    gap: 20px;
+  }
+}
