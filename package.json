@@ -16,7 +16,7 @@
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.28.2"
   },
-  "homepage": "https://akshatabhimnale.github.io/practical",
+  "homepage": "https://akshatabhimnale.github.io/practical-deploy",
   "devDependencies": {
     "@eslint/js": "^9.17.0",
     "@types/react": "^18.3.18",
